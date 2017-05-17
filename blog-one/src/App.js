@@ -18,7 +18,7 @@ class Post extends Component {
           
         </p>
       </div>
-    )m;
+    );
   }
 }
 
