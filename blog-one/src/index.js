@@ -1,9 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import Post from './App';
 import './index.css';
 
+var myBlog = {
+	title: "Cats are Us",
+	author: "Smokey",
+	body: "look at the fur on the cat",
+	contents: ["First!", 
+			   "Great",
+			   "Feed the cat!"]
+}
+
+
 ReactDOM.render(
-  <App />,
+  <Post 
+  	title={myBlog.title}
+  	author={myBlog.author}
+  	body={myBlog.body}
+  	contents={myBlog.contents}
+
+  />,
   document.getElementById('root')
 );
