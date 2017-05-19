@@ -5,11 +5,19 @@ import './index.css';
 
 var myBlog = {
 	title: "Cats are Us",
-	author: "Smokey",
+	author: "Traci",
 	body: "look at the fur on the cat",
-	contents: ["First!", 
+	comments: ["First!", 
 			   "Great",
-			   "Feed the cat!"]
+			   "Feed the cat!"],
+  authors: ["Bernie",
+         "Smokey",
+         "Fluffy"],       
+  catFood: ["milk",
+          "fish",
+          "wet food - yum!"
+
+  ]            
 }
 
 
@@ -18,7 +26,9 @@ ReactDOM.render(
   	title={myBlog.title}
   	author={myBlog.author}
   	body={myBlog.body}
-  	contents={myBlog.contents}
+    comments={myBlog.comments}
+    allAuthors={myBlog.authors}
+    allCatFood={myBlog.catFood}
 
   />,
   document.getElementById('root')
